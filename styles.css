@@ -1,0 +1,67 @@
+body {
+    font-family: Verdana; /*Font*/
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: black; /*Navbar styling*/
+    padding: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white; /*Navbar text colour*/
+    margin-right: 10px; /*Space between navbar content*/
+}
+
+h1 {
+    margin-top: 20px; /*Space between headings*/
+}
+
+.book {
+    display: flex; 
+    margin-bottom: 20px; /*Space between images*/
+    align-items: center; /*Align images and information*/
+}
+
+.book img {
+    width: 15%; 
+    margin-right: 20px; /*Spacing image and text*/
+}
+
+.book-info {
+    max-width: 50%; /*Set text width*/
+}
+
+.pay-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px; /*Button size*/
+    background-color: black; /*Button colour*/
+    color: white; /*Text colour*/
+    text-decoration: none; /*Remove underlines*/
+}
+
+.navbar a {
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .book {
+      flex-direction: column; /*Single file page on smaller screens*/
+      align-items: flex-start;/*Align left*/
+    }
+  
+    .book img {
+      width: 100%; 
+    }
+  
+    .book-info {
+      width: 100%; 
+    }
+  }
+  
+
+
